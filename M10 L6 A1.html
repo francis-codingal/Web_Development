@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My Doctor's Appointment</title>
+  </head>
+  <body>
+
+    <h1>🏥 My Doctor's Appointment</h1>
+    <p>Please complete the form below to schedule your consultation!</p>
+    <hr>
+
+    <form>
+
+      <fieldset>
+        <legend>Personal Details</legend>
+
+        <label>Full Name</label><br>
+        <input type="text" id="name" placeholder="e.g. Jane Doe"><br><br>
+
+        <label>Medical Access Code</label><br>
+        <input type="password" id="pid" placeholder="Enter security PIN"><br><br>
+
+        <label>Date of Birth</label><br>
+        <input type="date" id="dob"><br>
+
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend>Your Visit</legend>
+
+        <label>Choose Specialist</label><br>
+        <select id="doctor">
+          <option value="">-- Choose a specialist --</option>
+          <option value="dr-miller">Dr. Miller — Cardiology</option>
+          <option value="dr-wilson">Dr. Wilson — Dermatology</option>
+          <option value="dr-smith">Dr. Smith — Orthopedics</option>
+        </select><br><br>
+
+        <label>Primary Reason for Visit</label><br>
+        <input type="radio" name="reason" value="headache"> Frequent Headaches<br>
+        <input type="radio" name="reason" value="skin"> Skin Rash<br>
+        <input type="radio" name="reason" value="joint"> Joint Pain<br>
+        <input type="radio" name="reason" value="routine"> Annual Wellness Check<br><br>
+
+        <label>Additional Symptoms or Notes</label><br>
+        <textarea id="notes" rows="3" cols="35" placeholder="e.g. Experiencing mild joint pain in the right knee."></textarea><br>
+
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend>Preferred Visit Day</legend>
+
+        <input type="checkbox" value="tue"> Tuesday<br>
+        <input type="checkbox" value="thu"> Thursday<br>
+        <input type="checkbox" value="sat"> Saturday<br>
+
+      </fieldset>
+
+      <br>
+      <input type="submit" value="Schedule Appointment">
+
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Toy Donation Form</title>
+  </head>
+  <body>
+
+    <h1>🧸 Toy Donation Form</h1>
+    <p>Fill in the form below to donate toys to children in need!</p>
+    <hr>
+
+    <form>
+
+      <fieldset>
+        <legend>Donor Information</legend>
+
+        <label>Full Name</label><br>
+        <input type="text" id="name" placeholder="Enter your full name"><br><br>
+
+        <label>Donor Security Code</label><br>
+        <input type="password" id="donor-id" placeholder="Enter security PIN"><br><br>
+
+        <label>Pick-Up Date</label><br>
+        <input type="date" id="donation-date"><br>
+
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend>Toy Information</legend>
+
+        <label>Choose Toy Category</label><br>
+        <select id="category">
+          <option value="">-- Select a category --</option>
+          <option value="board-games">Board Games & Puzzles</option>
+          <option value="action-figures">Action Figures & Dolls</option>
+          <option value="building-blocks">Building Blocks & Legos</option>
+          <option value="outdoor-sports">Outdoor & Sports Equipment</option>
+        </select><br><br>
+
+        <label>Item Condition</label><br>
+        <input type="radio" name="condition" value="brand-new"> Brand New (In Box)<br>
+        <input type="radio" name="condition" value="gently-used"> Gently Used<br>
+        <input type="radio" name="condition" value="fair"> Fair Condition<br><br>
+
+        <label>Toy Descriptions or Notes</label><br>
+        <textarea id="notes" rows="3" cols="35" placeholder="e.g. Wooden train set, complete with 20 pieces and tracks."></textarea><br>
+
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend>Preferred Drop-Off Day</legend>
+
+        <input type="checkbox" value="tue"> Tuesday<br>
+        <input type="checkbox" value="thu"> Thursday<br>
+        <input type="checkbox" value="sat"> Saturday<br>
+
+      </fieldset>
+
+      <br>
+      <input type="submit" value="Donate Toys">
+
+    </form>
+
+  </body>
+</html>
