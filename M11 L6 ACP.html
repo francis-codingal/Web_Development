@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zoo Rescue Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding-bottom: 50px;
+    }
+
+    .header {
+      position: static;
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .alert-banner {
+      position: sticky;
+      top: 0;
+      background-color: #d32f2f;
+      color: white;
+      padding: 12px;
+      text-align: center;
+      font-weight: bold;
+      z-index: 100;
+    }
+
+    .tracker-container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .animal-card {
+      position: relative;
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .status-badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background-color: #ffa000;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .shifted-note {
+      position: relative;
+      top: 5px;
+      left: 10px;
+      color: #555;
+      font-size: 14px;
+      font-style: italic;
+    }
+
+    .emergency-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #1976d2;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🐾 Zoo Rescue Tracker</h1>
+    <p>Monitoring rescued wildlife recovery and care status</p>
+  </div>
+
+  <div class="alert-banner">
+    🚨 Active Rescue Operation: Team deployed to Sector 4
+  </div>
+
+  <div class="tracker-container">
+
+    <div class="animal-card">
+      <span class="status-badge">RECOVERING</span>
+      <h2>Leo the Bengal Tiger</h2>
+      <p><strong>Rescue Location:</strong> Sector 2 Forest Reserve</p>
+      <p class="shifted-note">📌 Medical status updated 2 hours ago by Vet Team.</p>
+    </div>
+
+    <div class="animal-card">
+      <span class="status-badge">STABLE</span>
+      <h2>Maya the Elephant Calfe</h2>
+      <p><strong>Rescue Location:</strong> Sector 5 River Basin</p>
+      <p class="shifted-note">📌 Receiving daily physical therapy and hydration care.</p>
+    </div>
+
+    <div class="animal-card">
+      <span class="status-badge">CRITICAL</span>
+      <h2>Kiki the Red Panda</h2>
+      <p><strong>Rescue Location:</strong> Sector 1 Ridge</p>
+      <p class="shifted-note">📌 Under 24/7 observation in ICU Enclosure.</p>
+    </div>
+
+  </div>
+
+  <div class="emergency-button">
+    📞 Contact Rescue Squad
+  </div>
+
+</body>
+</html>
