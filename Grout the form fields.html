@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grouped Form Fields</title>
+</head>
+<body>
+
+  <h2>User Registration Form</h2>
+
+  <form>
+
+    <!-- Group 1: Personal Information -->
+    <fieldset>
+      <legend>Personal Details</legend>
+
+      <label for="fname">First Name:</label><br>
+      <input type="text" id="fname" name="firstname"><br><br>
+
+      <label for="lname">Last Name:</label><br>
+      <input type="text" id="lname" name="lastname"><br><br>
+
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob">
+    </fieldset>
+
+    <br>
+
+    <!-- Group 2: Account Information -->
+    <fieldset>
+      <legend>Account Security</legend>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password">
+    </fieldset>
+
+    <br>
+
+    <!-- Group 3: Preferences -->
+    <fieldset>
+      <legend>Contact Preferences</legend>
+
+      <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+      <label for="newsletter">Subscribe to monthly newsletter</label><br>
+
+      <input type="checkbox" id="updates" name="updates" value="yes">
+      <label for="updates">Receive SMS updates</label>
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Submit Form">
+
+  </form>
+
+</body>
+</html>
